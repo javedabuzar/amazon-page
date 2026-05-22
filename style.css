@@ -384,7 +384,7 @@ header {
 .hero-btn {
     position: absolute;
     top: 50%;
-    transform: translateY(-100%);
+    transform: translateY(-50%);
     background: transparent;
     border: none;
     font-size: 50px;
@@ -393,6 +393,12 @@ header {
     z-index: 10;
     padding: 20px;
     transition: color 0.2s;
+}
+
+.nav-fill,
+.nav-search,
+.search-input {
+    min-width: 0;
 }
 
 .hero-btn:hover {
@@ -699,9 +705,12 @@ header {
     .nav-belt {
         flex-wrap: wrap;
         gap: 10px;
-        justify-content: center;
+        justify-content: space-between;
         height: auto;
         padding: 10px 15px;
+    }
+    .nav-logo img {
+        width: 90px;
     }
     .nav-fill {
         order: 3;
